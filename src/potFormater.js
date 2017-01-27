@@ -8,8 +8,8 @@
  * @author Michael Hsu
  */
 const potCommentsFormater = messageList =>
-  messageList.reduce((acc, { filename, id, description }) =>
-    `${acc}#: ${filename}\n#. [${id}] - ${description}\n`
+  messageList.reduce((acc, { filename, id, description, defaultMessage }) =>
+    `${acc}#: ${filename}\n#. [${id}] - ${description}\n#. ${defaultMessage}\n`
   , '');
 
 /**
