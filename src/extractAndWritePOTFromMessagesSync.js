@@ -6,7 +6,7 @@ import readAllMessageAsObjectSync from './readAllMessageAsObjectSync';
 import potFormater from './potFormater';
 
 const customKeyMapper = (message, messageKey, filename) => ({
-  [message[messageKey]]: [{ ...message, filename }],
+  [message[messageKey]]: [{ ...message, filename, mappedBy: messageKey }],
 });
 
 const customKeyMapperFactory = (messageKey = 'defaultMessage') =>
