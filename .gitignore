@@ -7,9 +7,6 @@
 # Node.js / npm
 node_modules
 
-# build
-lib
-
 # code coverage
 .nyc_output
 coverage/
